@@ -1,0 +1,32 @@
+{
+  "name": "@slashstar/cantrips",
+  "version": "0.0.1",
+  "author": "Martin MG Jacobsen <devbot@martinjacobsen.no>",
+  "description": "Small utility library written as an opportunity to get acquainted with TypeScript",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -cw",
+    "lint": "tslint --project tsconfig.json"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmgj/cantrips.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mmgj/cantrips/issues"
+  },
+  "devDependencies": {
+    "rollup": "^1.8.0",
+    "rollup-plugin-typescript2": "^0.20.1",
+    "tslint": "^5.15.0",
+    "tslint-config-airbnb": "^5.11.1",
+    "typescript": "^3.4.1"
+  }
+}
