@@ -1,12 +1,13 @@
 {
     "defaultSeverity": "error",
     "extends": [
-        "tslint:recommended"
+        "tslint-config-airbnb"
     ],
     "jsRules": {},
     "rules": {
         "curly": [true, "ignore-same-line"],
-        "quotemark": [true, "single", "jsx-double"]
+        "quotemark": [true, "single", "jsx-double"],
+        "max-line-length": [false]
     },
     "rulesDirectory": []
 }

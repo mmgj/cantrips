@@ -10,7 +10,7 @@ export function getShape(obj: object, depth: number = 1): string {
   const tab: string = '  ';
   const prefix: string = tab;
   let output = '{\n';
-  Object.entries(obj).forEach((couple: any[]) => {
+  Object.entries(obj).forEach((couple: [string, any]) => {
     const type: string = typeof couple[1];
     let desc = '';
     if (type === 'function') {
