@@ -37,4 +37,4 @@ export const humanizeList = (
 export { humanizeList as thingCommaThingAndThing };
 
 /* TODO: Lint this */
-export const prependZero = (input: number): string => input.toString().length < 2 ? `0${input}` : input;
+export const prependZero = (input: number): string => input.toString().length < 2 ? `0${input}` : input.toString();
