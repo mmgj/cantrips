@@ -18,7 +18,7 @@ const defaults: GrammarConfig = {
 
 export const humanizeList = (
   list: string[],
-  config?: GrammarConfig,
+  config?: GrammarConfig
 ): string => {
   if (list.length <= 1) return list.toString();
   const resolved = {
@@ -31,12 +31,14 @@ export const humanizeList = (
   const oxfordComma = oxford && list.length >= 3 ? ',' : '';
   const andSpace = and && and.length <= 0 ? '' : ' ';
 
-  return `${allButLastItem.join(', ')}${oxfordComma}${andSpace}${and} ${lastItem}${andThen}`;
+  return `${allButLastItem.join(
+    ', '
+  )}${oxfordComma}${andSpace}${and} ${lastItem}${andThen}`;
 };
 
 export { humanizeList as thingCommaThingAndThing };
 
 /* TODO: Lint this */
-export const prependZero = (input: number): string => input.toString().length < 2 ? `0${input}` : input;
+//export const prependZero = (input: number): string => input.toString().length < 2 ? `0${input}` : input;
 
 /* TODO: Add func to change case of str */
